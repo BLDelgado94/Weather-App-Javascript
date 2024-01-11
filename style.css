@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(79, 99, 99);
+}
+
+.container-card{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: rgb(195, 208, 210);
+    padding: 28px 32px;
+}

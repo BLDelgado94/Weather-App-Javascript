@@ -11,13 +11,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(79, 99, 99);
+    background: rgb(30, 40, 46);
 }
 
 .container-card{
     position: relative;
-    width: 400px;
+    width:400px;
     height: 105px;
-    background: rgb(195, 208, 210);
-    padding: 28px 32px;
+    background: linear-gradient(135deg, #39c1c1, #82548a);
+    padding: 40px 35px;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s ease-out;
+    border: solid yellow 5px;
 }

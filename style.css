@@ -17,7 +17,7 @@ body{
 .container-card{
     position: relative;
     width:400px;
-    height: 620px;
+    height: 100px;
     background: linear-gradient(135deg, #9df0e7, #6e3f7b);
     padding: 28px 32px;
     overflow: hidden;
@@ -87,6 +87,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .weather-details .humidity, .weather-details .wind{
@@ -111,4 +112,53 @@ body{
     font-size: 26px;
     margin-right: 10px;
     margin-top: 5px;
+}
+
+.weather-details span{
+    color: rgb(25, 32, 45);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color:rgb(25, 32, 45);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: rgb(25, 32, 45);
+    font-size: 20px;  
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fade-in{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }

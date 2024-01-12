@@ -11,19 +11,104 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(30, 40, 46);
+    background: rgb(25, 32, 45);
 }
 
 .container-card{
     position: relative;
     width:400px;
-    height: 105px;
-    background: linear-gradient(135deg, #39c1c1, #82548a);
-    padding: 40px 35px;
+    height: 620px;
+    background: linear-gradient(135deg, #9df0e7, #6e3f7b);
+    padding: 28px 32px;
     overflow: hidden;
     border-radius: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     transition: 0.5s ease-out;
-    border: solid yellow 5px;
+    border: solid white 2px;
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: black;
+    width: 85%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+    border: 0;
+    outline: 0;
+    background: white;
+    border-radius: 10px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: slategray;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 35px;
+    height:35px;
+    color: rgb(38, 50, 58);
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{
+    color: white;
+    background: rgb(25, 32, 45);
+}
+
+.search-box i{
+    position: absolute;
+    padding-left: 10px;
+    color: rgb(25, 32, 45);
+    font-size: 22px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind{
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details i{
+    color: rgb(25, 32, 45);
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 5px;
 }

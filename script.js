@@ -1,11 +1,7 @@
-const container = document.querySelector('.container');
-const search = document.querySelector('.search-box button');
-const weatherBox = document.querySelector('.weather-box');
-const weatherDetails = document.querySelector('.weather-details');
-const error404 = document.querySelector('.not-found');
+const apiKey = "";
+const apiUrl = "";
 
-search.addEventListener('click', () =>{
-
-    const APIKey = '';
-    const city = document.querySelector('.search-box input').ariaValueMax;
-})
+async function checkWeather(){
+    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+    let data = await response.json()
+}

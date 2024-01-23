@@ -22,7 +22,7 @@ body{
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 20px;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Roboto', sans-serif;
     transition: 0.5s ease-out;
     border: solid white 2px;
@@ -30,6 +30,7 @@ body{
 
 .search-box{
     width: 100%;
+    height: min-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,11 +41,11 @@ body{
     width: 85%;
     height: 30px;
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-transform: uppercase;
     padding-left: 32px;
-    border: 0;
-    outline: 0;
+    /* border: 0;
+    outline: 0; */
     background: white;
     border-radius: 10px;
 }
@@ -81,6 +82,26 @@ body{
 
 .weather-box{
     text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color:#6e3f7b;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    /* margin-left: -15px; */
+}
+
+.weather-box .temperature span{
+    position: relative;
+    margin-left: 5px;
+    font-size: 1.5rem;
 }
 
 .weather-details{

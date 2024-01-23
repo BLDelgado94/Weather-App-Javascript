@@ -51,15 +51,22 @@ search.addEventListener('click', () => {
                     image.src = 'weather-icons/cloud.png';
                     break;
 
-                case 'Haze':
+                case 'Mist':
                     image.src = 'weather-icons/mist.png';
+                    break;
+
+                case 'Fog':
+                    image.src = 'weather-icons/fog.png';
                     break;
 
                 default:
                     image.src = '';
             }
 
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            const temperatureCelsius = parseInt(json.main.temp);
+            const temperatureFahrenheit = Math.round(temperatureCelsius * 9/5) + 32;
+
+            temperature.innerHTML = `${temperatureFahrenheit}<span>°F</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
@@ -69,9 +76,6 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
-
-
         });
-
 
 });

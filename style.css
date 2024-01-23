@@ -91,7 +91,7 @@ body{
 
 .weather-box .temperature{
     position: relative;
-    color:#6e3f7b;
+    color:rgb(25, 32, 45);
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
@@ -99,9 +99,16 @@ body{
 }
 
 .weather-box .temperature span{
-    position: relative;
+    position: absolute;
     margin-left: 5px;
     font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: rgb(25, 32, 45);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .weather-details{

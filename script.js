@@ -1,6 +1,3 @@
-require('dotenv').config();
-
-const APIKey = process.env.API_KEY
 const container = document.querySelector('.container-card');
 const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
@@ -9,7 +6,7 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
 
-    const APIKey = apiKey;
+    const APIKey = 'bc002bbdc465ee050e98697ceb437087';
     const city = document.querySelector('.search-box input').value;
 
     if (city === '')
@@ -54,14 +51,13 @@ search.addEventListener('click', () => {
                     image.src = 'weather-icons/cloud.png';
                     break;
 
+                case 'Haze':
+                    image.src = 'weather-icons/mist.png';
+                    break;
+                    
                 case 'Mist':
                     image.src = 'weather-icons/mist.png';
                     break;
-
-                case 'Fog':
-                    image.src = 'weather-icons/fog.png';
-                    break;
-
                 default:
                     image.src = '';
             }

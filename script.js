@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+const APIKey = process.env.API_KEY
 const container = document.querySelector('.container-card');
 const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
@@ -6,7 +9,7 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
 
-    const APIKey = 'bc002bbdc465ee050e98697ceb437087';
+    const APIKey = apiKey;
     const city = document.querySelector('.search-box input').value;
 
     if (city === '')
